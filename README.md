@@ -1,2 +1,2 @@
 # personal-page
-we like fortnite we like fortnite
+go to README.md and change the text to something other than "we like fortnite we like fortnite"
