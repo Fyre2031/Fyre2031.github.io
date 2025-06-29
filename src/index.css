@@ -1,16 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&family=Roboto+Mono&display=swap');
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Ubuntu:wght@400;700&family=Ubuntu+Mono&family=Roboto+Mono&family=Inter:wght@400&family=Lato:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+@import "tailwindcss";
 
 :root {
-  font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-mono: 'Ubuntu Mono', 'Roboto Mono', 'Fira Mono', 'Consolas', monospace;
+  --font-title: 'Montserrat', Arial, sans-serif;
+  --font-body: 'Lato', Arial, sans-serif;
+  font-family: var(--font-body);
   line-height: 1.5;
   font-weight: 400;
+  letter-spacing: 0.01em;
 
   color-scheme: light dark;
-  color: rgb(206, 206, 206);
-  background-color: #242424;
+  color: #f3f4f6;
+  background-color: #181818;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -22,6 +24,9 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  color: #f3f4f6;
+  font-family: var(--font-body);
+  letter-spacing: 0.01em;
 }
 
 a {
@@ -30,11 +35,29 @@ a {
 }
 
 button {
-  font-family: inherit;
+  font-family: var(--font-mono);
   cursor: pointer;
   border: none;
   background: none;
   padding: 0;
+}
+
+.title {
+  font-size: 1.25rem; /* 20px, similar to text-xl */
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: var(--font-title);
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-family: var(--font-title);
+}
+
+.card-body {
+  font-size: 1rem;
+  font-family: var(--font-body);
 }
 
 

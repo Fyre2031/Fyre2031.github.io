@@ -7,10 +7,13 @@ import Footer from './sections/Footer'
 
 export default function App() {
     return (
-        <main className="container mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+        <main className="container mx-auto max-w-5xl px-8 lg:px-16">
             <Hero />
+            <hr className="border-t border-[#333] my-8" />
             <About />
+            <hr className="border-t border-[#333] my-8" />
             <Projects />
+            <hr className="border-t border-[#333] my-8" />
             <Footer />
         </main>
     )
