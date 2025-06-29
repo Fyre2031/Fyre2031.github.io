@@ -1,13 +1,17 @@
-import './App.css'
+import React from 'react'
 
-function App() {
-  return (
-    <div>
-      {/* Start building your app here */}
-    </div>
-  )
+import Hero from './sections/Hero'
+import About from './sections/About'
+import Projects from './sections/Projects'
+import Footer from './sections/Footer'
+
+export default function App() {
+    return (
+        <>
+            <Hero />
+            <About />
+            <Projects />
+            <Footer />
+        </>
+    )
 }
-
-export default App
-
-// git checkout -b your_branch_name
